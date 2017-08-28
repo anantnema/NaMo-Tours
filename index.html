@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>NaMo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="jquery.canvasjs.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	//Better to construct options first and then pass it as a parameter
+	var options = {
+		title: {
+			text: "Visits(in countries) vs Continent "
+		},
+                animationEnabled: true,
+		data: [
+		{
+			type: "column", 
+			dataPoints: [
+				{ label: "Asia", y: 12 },
+				{ label: "North America", y: 2 },
+				{ label: "South America", y: 1 },
+				{ label: "Europe", y: 2 },
+				{ label: "Australia", y: 1 }
+			]
+		}
+		]
+	};
+
+	$("#charContainer").CanvasJSChart(options);
+
+});
+
+$(function () {
+	
+	var options = {
+		title: {
+			text: "Visits (in Days)"
+		},
+                animationEnabled: true,
+		data: [
+		{
+			type: "pie", 
+			dataPoints: [
+				{ label: "Asia", y: 28 },
+				{ label: "North America", y: 9 },
+				{ label: "South America", y: 6 },
+				{ label: "Europe", y: 6 },
+				{ label: "Australia", y: 5 }
+			]
+		}
+		]
+	};
+
+	$("#chartContainer").CanvasJSChart(options);
+
+});
+
+$(function () {
+	//Better to construct options first and then pass it as a parameter
+	var options = {
+		title: {
+			text: "Global Remittances received in 2014($, billion)"
+		},
+                animationEnabled: true,
+		data: [
+		{
+			type: "column", //change it to line, area, column, pie, etc
+			dataPoints: [
+				{ label: "India", y: 70 },
+				{ label: "China", y: 64 },
+				{ label: "Philippines", y: 28 },
+				{ label: "Mexico", y: 25 },
+				{ label: "Nigeria", y: 21 },
+				{ label: "Egypt", y: 20 },
+				{ label: "Pakistan", y: 17 },
+				{ label: "Bangladesh", y: 15 },
+			]
+		}
+		]
+	};
+
+	$("#globalContainer").CanvasJSChart(options);
+
+});
+
+$(function () {
+	
+	var options = {
+		title: {
+			text: "Seats Total 543"
+		},
+                animationEnabled: true,
+		data: [
+		{
+			type: "pie",
+			dataPoints: [
+				{ label: "NDA", y: 334 },
+				{ label: "UPA", y: 61 },
+				{ label: "AIADMK", y: 37 },
+				{ label: "TMC", y: 34 },
+				{ label: "BJD", y: 20 },
+				{ label: "OTHERS", y: 57 }
+			]
+		}
+		]
+	};
+
+	$("#piechartContainer").CanvasJSChart(options);
+
+});
+$(function () {
+	
+	var options = {
+		title: {
+			text: "Countries sending remittances to India($, billion)"
+		},
+                animationEnabled: true,
+		data: [
+		{
+			type: "pie", 
+			dataPoints: [
+				{ label: "United Arab Emirate", y: 12638 },
+				{ label: "United States", y: 11177 },
+				{ label: "Saudi Arabia", y: 10836 },
+				{ label: "Kuwait", y: 4740 },
+				{ label: "Pakistan", y: 4697 },
+				{ label: "Qatar", y: 4023 },
+				{ label: "United Kingdom", y: 3641 },
+				{ label: "Oman", y: 3471 },
+				{ label: "Oman", y: 2767 },
+			]
+		}
+		]
+	};
+
+	$("#gloContainer").CanvasJSChart(options);
+
+});
+
+</script>
+	
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Narendra Modi <small>Foreign Tours</small></h1>
+</div>
+
+
+
+
+<style>
+    .section {
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: #111111;
+        color: #ccc;
+        border-top: solid 3px #1E97E3;
+        height: 50px;
+    }
+
+    .menuitem {
+        margin-top: 12px;
+        display: inline-block;
+        width: 100px;
+    }
+
+    .menulink {
+        height: 40px;
+        padding: 7px;
+        border-bottom: 3px solid transparent;
+    }
+
+        .menulink:hover {
+            border-bottom: 3px solid #1E97E3;
+            text-decoration: none;
+            color: #1E97E3;
+        }
+
+    .footer {
+        margin-top: 12px;
+    }
+
+    .liitem {
+        height: 45px;
+    }
+
+    .skillLine {
+        display: inline-block;
+        width: 100%;
+        min-height: 90px;
+        padding: 3px 4px;
+    }
+
+    skillLineDefault {
+        padding: 3px 4px;
+    }
+
+    div.skill {
+        background: #F58723;
+        border-radius: 3px;
+        color: white;
+        font-weight: bold;
+        padding: 3px 4px;
+        width: 70px;
+    }
+
+    .rating {
+        margin-left: 30px;
+    }
+
+    .footerQR {
+        margin-left: 30%;
+    }
+
+    .leftText {
+        font-size: 41px;
+    }
+
+    .rightText {
+        font-size: 41px;
+        background: #F58723;
+        border-radius: 3px;
+        color: white;
+        padding: 3px 4px;
+    }
+	
+	.imgi {
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+
+
+</style>
+
+<div class="container">
+    <br />
+
+    <div class="row">
+		
+		  <div class="col-sm-6 col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="text-center">NaMo<span class="glyphicon glyphicon-saved pull-right"></span></h4>
+                </div>
+                <div class="panel-body text-center">
+                    <p class="lead">
+                        <strong>Narendra Modi</strong>
+                    </p>
+                </div>
+               <img src="High1.jpg" style="width:250px;height:228px;">
+                <div class="panel-footer">
+                    
+                </div>
+            </div>
+        </div>
+	
+	
+        <div class="col-sm-6 col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="text-center">Profile<span class="glyphicon glyphicon-user pull-right"></span></h4>
+                </div>
+                <div class="panel-body text-center">
+                    <p class="lead">
+                        <strong>15th Prime Minister of India Incumbent</strong>
+                    </p>
+					
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item liitem"><strong>Born:</strong>
+                        <span class="pull-right">17/09/1950</span>
+                    </li>
+					<li class="list-group-item liitem"><strong>Birth Place:</strong>
+                        <span class="pull-right">Vadnagar Gujarat</span>
+                    </li>
+                    <li class="list-group-item liitem"><strong>Party:</strong>
+                        <span class="pull-right">Bhartiya Janta Party</span>
+                    </li>
+                    
+                    <li class="list-group-item liitem"><strong>PM From:</strong>
+                        <span class="pull-right">26 May 2014</span>
+                    </li>
+                </ul>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-3 col-md-4 col-lg-2"></div>
+                        <div class="col-xs-2 col-sm-4 col-md-4 col-lg-4" id="qr1"></div>
+                        <div class="col-xs-6 col-sm-5 col-md-4 col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class="col-sm-6 col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="text-center">NaMo<span class="glyphicon glyphicon-saved pull-right"></span></h4>
+                </div>
+                <div class="panel-body text-center">
+                    <p class="lead">
+                        <strong>LokSabha</strong>
+                    </p>
+                </div>
+               <img src="winner.jpg" style="width:250px;height:228px;">
+                <div class="panel-footer">
+                    
+                </div>
+            </div>
+        </div>
+		<div class="col-sm-6 col-lg-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="text-center">NaMo<span class="glyphicon glyphicon-saved pull-right"></span></h4>
+                </div>
+                <div class="panel-body text-center">
+                    <p class="lead">
+                        <strong>LokSabha</strong>
+                    </p>
+                </div>
+                <div id="piechartContainer" style="height: 300px; width: 100%;"></div>
+            </div>
+        </div>
+      </div>
+		<div class="col-sm-12 col-md-12 col-lg-6">
+				<ul class="list-group list-group-flush">
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                </ul>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-6">
+				<ul class="list-group list-group-flush">
+                    <div id="charContainer" style="height: 300px; width: 100%;"></div>
+                </ul>
+		</div>
+		
+		<div class="col-lg-8">
+		<img HEIGHT=100% WIDTH= 100% SRC="narendra.jpg" align="left" font= "50px">
+	</div>
+<p style="font-size:150%;font-family: calibri";><strong>1).</strong> BJP Govt. convinced Saudi Arabia not to charge &quot On-Time Delivery 1Premium charges&quot on Crude Oil &#45; Young Petroleum Minister Dharmendra Pradhan & External Affairs Minister Sushma Swaraj sealed the deal. Saved the country thousands of crores...
+</br>
+<strong>2).</strong> India will build 4 Hydroelectric power stations &#43 Dams in Bhutan (India will get lion's share in Green energy that will be produced in future from these projects)
+</br>
+<strong>3).</strong> India will build Biggest ever dam of Nepal (China was trying hard to get that) &#45 India will get 83% Green energy produce from that hydro power station for free &#45 in future. . .</p></img>
+	</br>
+		<img HEIGHT="250px" WIDTH= 50% SRC="na.jpg" font= "50px" style="float: right;">
+		
+		<p  style="font-size:150%;font-family: calibri";>
+<strong>4).</strong> Increased relationship with Japan and they agreed to invest $30 Billion in DMIC (Delhi &#45 Mumbai Investment Corridor)
+</br>
+<strong>5). </strong>Increased strategic relationship with Vietnam and Vietnam has now agreed to give contract of Oil exploration to ONGC&#45Videsh (UPA was not ready to take this at all because they were worried about China &#45 and getting into a conflict of interests on south China sea)
+</br>
+<strong>6).</strong> Remittances are a key source of income for households and support for the economy in developing countries. We should define a target date before 2030 to reduce the high costs of transferring remittances, he said said in his intervention at G20 Working Lunch on Development and Climate Change in Antalya.
+India has been pushing for global efforts to bring down transaction cost for remittances.
+</br>
+	
+	<div class="col-sm-12 col-md-12 col-lg-6">
+				<ul class="list-group list-group-flush">
+                    <div id="globalContainer"  style="height: 300px; width: 100%; align:center"></div>
+                </ul>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-6">
+				<ul class="list-group list-group-flush">
+                    <div id="gloContainer" style="height: 300px; width: 100%;"></div>
+                </ul>
+		</div>
+	
+	
+	
+		<img HEIGHT="250px" WIDTH= 50% SRC="nar.jpg" font= "50px" style="float: right;">
+		<p  style="font-size:150%;font-family: calibri";>
+	<strong>7).</strong> China leaning President Rajapakse lost elections in Sri Lanka &#45 Remember UPA lost &quotHambantota&quot port development &#45 read latest report of CIA, where they mention RAW has played a major role in power shift of Sri Lanka. Sri Lanka has backed out of Chinese contract and shifted to Indian project managers.
+</br>
+<strong>8).</strong> With China, as Trade Deficit was increasing, NaMo forced their hand. Anti-Dumping will come soon so China will invest heavily into India. &#45 China has already committed $ 20 billion Investment in India. That&#39s nearly &#8377 140,000 crores.
+</br>
+<strong>9).</strong> On Security &#45 I think adding Ajit Doval to his team is the best decision by NaMo. See the recent tie-up with Pentagon, Israel & Japan. . Now see how we stopped the Terror Boat and listen to his words... &quotAny Mumbai like attack from Pakistan and Pakistan will lose Baluchistan!&quot That&#39s the language of deterrence that I want to hear as an Indian. We won&#39t hit first, but if you do, we surely won&#39t turn the other cheek....
+
+</br>
+<strong>10).</strong> India approved the border road in the NorthEast and around India &#45 China border &#45 Remember just because of China&#39s opposition, the ADB (Asian Development Bank) didn&#39t give us funds during UPA regime and UPA held that file under &quotEnvironment Ministry control &#45 Remember the infamous &quotJAYANTHI TAX &quot? No one bothered about the disastrous effect on our armed forces.
+</br>		
+		</p></img>
+		
+		
+		<img HEIGHT=150% WIDTH= 100% SRC="oba.jpg" font= "50px" style="float: center;">
+		<p  style="font-size:150%;font-family: calibri";>
+		<strong>11).</strong> Till recently we were exclusively buying Nuclear Reactors from Russia or USA and it was much like beggar kind of situation because they were worried about usage of Nuclear reactor for some other use. So only what they opted to give us, we could get. Now Narendra Modi was able to convince France and now France will make Nuclear reactors with the latest technology in India. On MAKE IN INDIA
+efforts with collaboration with an Indian company as a partner
+</br>
+<strong>12).</strong> During 26th Jan. visit of Barack Obama , NaMo convinced USA to drop rule of Nuclear fuel tracking and sorted out Liabilities rules which now open the gates for next 16 Nuclear power plant projects. . . .
+		
+		</p>
+		</img>
+		
+		<img HEIGHT="300px" WIDTH= 50% SRC="nare.jpg" font= "50px" style="float: left;">
+		<p  style="font-size:150%;font-family: calibri;">
+		<strong>13).</strong> For the first time after 42 yrs Indian Prime Minister visited Canada not to attend some meeting but as a specific state visit, in a Bilateral deal, India was able convince to Canada to supply Uranium for India&#39s Nuclear reactors for next 5 years. It will be of great help to Resolve India&#39s Power problems. . . .
+</br>
+<strong>14).</strong> Canada approves visa on arrival for all Indian tourists.
+</br>
+<strong>15).</strong> India&#39s Air defense was getting weaker by the day, UPA was very happy to let it happen despite repeated specific inputs from the armed forces, NaMo renegotiated Rafale fighter Jets deal with France personally and bought 36 Jets on ASAP basis. At better than rack rates. No middlemen, no commissions
+		</p></img>
+		</br>
+		</br>
+		<div class="center">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="panel panel-primary" style="height: 592px; width: 118%">
+                <div class="panel-heading">
+                    <h4 class="text-center">Foreign Tours<span class="glyphicon glyphicon-screenshot pull-right"></span></h4>
+                </div>
+               	
+			<p>
+<iframe src="http://interactive.thehindu.com/archive/Maps/modi-visits/index2.html" style="border:1px #cccccc solid;" name="frame1" scrolling="auto" frameborder="no" align="center" height = "530px" width = "636px">
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+</iframe>
+</p>
+            </div>
+			</div>
+			 </div>
+       
+	
+    
+    </div>
+    
+        
+            
+                
+                    <h4 class="text">Data Source</h4>
+               
+				<li><a href="https://en.wikipedia.org/wiki/List_of_prime_ministerial_trips_made_by_Narendra_Modi">WikiPedia</a></li>
+				
+                <li><a href="http://www.veritenews.com/news/national/facebook-post-about-narendra-modi-foreign-trips-is-going-viral/897/?seq=2">VeriteNews</a></li>
+           
+       
+   
+</div>
+
+
+</div>
+
+</body>
+</html>
