@@ -2,5 +2,5 @@
 
   [Demo](http://namotours.surge.sh/)
     
-        clone it
-        Run index.html
+    clone it
+    Run index.html
